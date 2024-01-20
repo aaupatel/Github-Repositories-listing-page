@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background-color: black;
+    overflow-x: hidden; 
+}
+
+#main {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background-color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-input {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-input label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#github-link {
+    width: 20vw;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+#submit-link {
+    margin-top: 12px;
+    padding: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#main-container {
+    width: 80%;
+    min-height: 100%;
+    border: 1px solid #686363;
+    margin: 0 auto; /* Center the container */
+}
+
+#data {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background-color: #0D1117;
+    border-bottom: 1px solid #686363;
+    overflow: hidden; 
+}
+
+#user-img-intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2vw 0 8px 5vw;
+}
+
+#user-image {
+    width: 16vw;
+    height: 13vw;
+    overflow: hidden;
+    border: 1px solid #9999;
+    border-radius: 50%;
+}
+
+#user-image img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#user-intro {
+    height: 100%;
+    width: 100%;
+    margin-left: 3vw;
+    place-items: center;
+}
+
+.username {
+    font-size: 30px;
+}
+
+.actual-name {
+    padding-top: 5px;
+    text-transform: capitalize;
+}
+
+.userbio {
+    font-size: 15px;
+    color: rgb(195, 195, 195);
+}
+
+.homelocation {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    padding-top: 30px;
+    display: flex;
+    gap: 8px;
+}
+
+.homelocation i {
+    font-size: 15px;
+}
+
+.usersocialmedia {
+    padding-top: 30px;
+}
+
+.github-link {
+    padding-left: 20px;
+    display: flex;
+    gap: 5px;
+    font-size: 7px;
+}
+
+.github-link i {
+    font-size: 15px;
+}
+
+#heading {
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+    padding: 5px;
+}
+
+#repo-container {
+    border-top: 1px solid #686363;
+    width: 100%;
+    height: 100%;
+    background-color: #0D1117;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.slider-container {
+    width: 95%;
+    height: 100%;
+    flex-grow: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.repository-name {
+    font-size: larger;
+}
+
+.repository-description {
+    font-size: x-small;
+    color: #686363;
+    margin: 8px 0;
+}
+
+.repository {
+    width: 45%;
+    max-width: 45%; 
+    height: 100%;
+    margin: 10px;
+    border: 1px solid #686363;
+    background-color: black;
+    display: block;
+    padding: 10px;
+}
+
+#topics {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+    overflow: hidden;
+}
+
+.topics button {
+    background-color: #0055af;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.navigation-buttons button {
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination span {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination span.active {
+    color: #007aff;
+    font-weight: bold;
+}

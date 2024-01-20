@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Github Repositories listing page</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="main">
+    <div id="user-input">
+      <label for="github-link">Paste your GitHub link:</label>
+      <input type="text" id="github-link" placeholder="https://github.com/username">
+      <button id="submit-link">Submit</button>
+    </div>
+    <div id="main-container" style="display: none;">
+      <div id="data">
+        <div id="user-img-intro">
+          <div id="user-image">
+            <img src="" alt="" id="user-avatar">
+          </div>
+          <div id="user-intro">
+            <div class="username"></div>
+            <div class="actual-name"></div>
+            <div class="userbio"></div>
+            <div class="homelocation" style="display: none;"><i class="ri-user-location-fill"></i><h1></h1></div>
+            <div class="usersocialmedia"></div>
+          </div>
+        </div>
+        <div class="github-link"><i class="ri-link"></i><h1></h1></div>
+      </div>
+      <h1 id="heading">Github Repositories</h1>
+      
+      <div id="repo-container">
+        <div class="slider-container">
+          <div class="slides">
+            <!-- <div class="slide">
+                  <div class="repository">
+                    <h1 class="repository-name">repository-name</h1>
+                    <h5 class="repository-description">repository-description</h5>
+                    <div id="topics" class="topics">
+                      <button id="topic">language</button>
+                    </div>
+                  </div>
+                  
+            </div>  -->
+            <!-- <div class="slide">Slide 2</div> -->
+          </div>
+          <div class="navigation-buttons">
+            <button class="prev">Previous</button>
+            <div class="pagination" id="pagination"></div>
+            <button class="next">Next</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
